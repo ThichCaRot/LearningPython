@@ -43,7 +43,6 @@ for (image, label) in dataset_unbatched:
     labels.append(label.numpy())
 labels = pd.Series(labels)
 
-# adjustments
 count = labels.value_counts().sort_index()
 count.index = gender.class_names
 print(count)
