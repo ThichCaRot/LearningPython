@@ -111,7 +111,7 @@ model.compile(optimizer='adam',
 
 model.summary()
 
-epochs = 1
+epochs = 10
 history = model.fit(
   cleanup,
   validation_data=val_ds,
